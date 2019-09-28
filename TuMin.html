@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>大数据脱敏平台</title>
+     <script type="text/javascript">
+        function upload() {
+            let img = document.getElementById('img')
+            let formData = new FormData()
+            let temp = file.files[0]
+            if (temp){
+                 formData.append('file',temp)
+                 img.src = window.URL.createObjectURL(temp)
+                  $.ajax({
+                    url:"/test/file2",
+                    type:"POST",
+                  data: formData,
+                  processData: false, // 告诉jQuery不要去处理发送的数据
+                  contentType: false, // 告诉jQuery不要去设置Content-Type请求头
+                  success: function(result){
+                   alert(result);
+                     }
+                 })
+                }
+            }
+    </script>
+</head>
+<body bgcolor="#E6E6FA">
+<h1>大数据脱敏平台</h1>
+
+<tr>
+  <td>脱敏文件：<input type="file" id="pic" name="pic" οnchange="upload()"></td>
+</tr>
+<div class="grad" id="son">
+    <button class="myBtn" οnclick="fileBtn()">
+    上传文件
+    </button>
+</div>
+<form action="C:/Users/苏苏/.PyCharmCE2019.1/config/scratches/test1.py" method="get">
+    需要脱敏的列号1: <input type="text" name="data_1">  <br />
+    需要脱敏的列号2: <input type="text" name="data_2" /> <br />
+    需要脱敏的列号3: <input type="text" name="data_3" />
+</form>
+<style>
+        .myBtn{
+            padding: 5px 10px;
+            background: rgb(92,184,92);
+            color: white;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+</style>
+<input class="myBtn" type="submit" value="脱敏处理" />
+</body>
+</html>
+
