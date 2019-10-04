@@ -20,7 +20,7 @@ with open(r'c:\file1\BB13_UNION_20190818.txt',encoding="utf-8") as f:
     list3 = '|'.join( list1[0])
     print(list3)
     f.close()
-    #从第二行进行遍历
+    #从第二行进行遍历、
     for i in list1[1:]:
         # 身份证翻转后，前6位加密--也就是正常身份证后6位加密
         # 列表转字符串
