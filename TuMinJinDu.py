@@ -16,7 +16,7 @@ with open(r'c:\file1\BB13_UNION_20190818.txt',encoding="utf-8") as f:
         b = a[0:16]  # 这是选取需要读取的位数 0:1表示第一列，1:2表示第2列
         list1.append(b)  # 将其添加在列表之中
     #print(list1[0])
-    #列表名称，需要保留原有，字符串形式
+    #列表名称，需要保留原有，字符串形式    发给
     list3 = '|'.join( list1[0])
     print(list3)
     f.close()
