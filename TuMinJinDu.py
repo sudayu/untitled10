@@ -7,7 +7,7 @@ import re
 with open(r'c:\file1\BB13_UNION_20190818.txt',encoding="utf-8") as f:
     mylist = f.readlines()
     #List列表形式
-    #print(mylist)
+    #print(mylist) ilovegit
     list1= []
     list2=[]
     for content in mylist:
