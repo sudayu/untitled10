@@ -3,7 +3,7 @@
 import re
 import codecs
 import re
-#读取txt中的内容
+#读取txt中的内容啦啦啦啦
 with open(r'c:\file1\BB13_UNION_20190818.txt',encoding="utf-8") as f:
     mylist = f.readlines()
     #List列表形式
